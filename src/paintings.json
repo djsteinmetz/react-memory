@@ -1,15 +1,15 @@
 [
     {
         "id": 1,
-        "image": "/images/Amethyst.-From-The-Precious-Stones-Series.-1900.jpg"
+        "image": "./images/Amethyst.-From-The-Precious-Stones-Series.-1900.jpg"
     },
     {
         "id": 2,
-        "image": "/images/Topaz.-From-The-Precious-Stones-Series,-1900.jpg"
+        "image": "./images/Topaz.-From-The-Precious-Stones-Series,-1900.jpg"
     },
     {
         "id": 3,
-        "image": "/images/Carnation.-From-The-Flowers-Series.-1898.jpg"
+        "image": "./images/Carnation.-From-The-Flowers-Series.-1898.jpg"
     },
     {
         "id": 4,
@@ -17,18 +17,18 @@
     },
     {
         "id": 5,
-        "image": "../images/F-Champenois-Imprimeur-Editeur.jpg"
+        "image": "./images/F-Champenois-Imprimeur-Editeur.jpg"
     },
     {
         "id": 6,
-        "image": "../images/Lily.-From-The-Flowers-Series.-1898.jpg"
+        "image": "./images/Lily.-From-The-Flowers-Series.-1898.jpg"
     },
     {
         "id": 7,
-        "image": "../images/Moravian-Teachers-Choir.jpg"
+        "image": "./images/Moravian-Teachers-Choir.jpg"
     },
     {
         "id": 8,
-        "image": "../images/Biscuits-Lefevre-Utile.jpg"
+        "image": "./images/Biscuits-Lefevre-Utile.jpg"
     }
 ]
