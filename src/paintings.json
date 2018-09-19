@@ -1,19 +1,19 @@
 [
     {
         "id": 1,
-        "image": "../images/Amethyst.-From-The-Precious-Stones-Series.-1900.jpg"
+        "image": "/images/Amethyst.-From-The-Precious-Stones-Series.-1900.jpg"
     },
     {
         "id": 2,
-        "image": "../images/Topaz.-From-The-Precious-Stones-Series,-1900.jpg"
+        "image": "/images/Topaz.-From-The-Precious-Stones-Series,-1900.jpg"
     },
     {
         "id": 3,
-        "image": "../images/Carnation.-From-The-Flowers-Series.-1898.jpg"
+        "image": "/images/Carnation.-From-The-Flowers-Series.-1898.jpg"
     },
     {
         "id": 4,
-        "image": "../images/Cycles-Perfecta.-C.-1897.jpg"
+        "image": "./images/Cycles-Perfecta.-C.-1897.jpg"
     },
     {
         "id": 5,
