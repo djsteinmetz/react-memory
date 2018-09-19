@@ -1,0 +1,38 @@
+nav {
+  width: 100%;
+  font-size: 3rem;
+  color: rgb(204,45,33);
+  margin-bottom: 50px;
+  background-color: rgb(249,243,238);
+  height: auto;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  color: rgb(204,45,33);;
+  font-weight: 400;
+}
+
+a:hover {
+  color: rgb(175, 38, 29);;
+  text-decoration: none;
+}
+
+nav li {
+  display: inline-block;
+  padding: 26px 0;
+  width: 25%;
+  /* text-align: center; */
+}
+
+ul {
+  /* padding-left: 0px; */
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 750px) {
+  #cur-sco, #top-sco {
+    font-size: 2rem;
+  }
+}

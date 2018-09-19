@@ -1,0 +1,7 @@
+.images {
+    max-width: 300px;
+    max-height: 300px;
+    margin: 25px;
+    padding: 25px;
+    border: 15px solid rgb(190, 158, 116);
+}
