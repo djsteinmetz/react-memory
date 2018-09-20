@@ -7,6 +7,9 @@ import Row from './Row'
 import Column from './Column'
 import Images from './components/Images'
 import paintings from './paintings.json'
+import StartBtn from './components/StartBtn'
+import ReactPlaceholder from 'react-placeholder'
+import 'react-placeholder/lib/reactPlaceholder.css'
 
 // So is there a reason that we make this our stateful componenet instead of *just* the images?
 
@@ -25,10 +28,20 @@ class App extends Component {
     topScore: 0,
     rightWrong: "",
     clicked: [],
+    ready: false
   };
+  startGame = event => {
+    event.preventDefault()
+    console.log('here')
+    this.setState({
+      ready: true
+    })
+  }
   handleShuffle = () => {
     let shuffledPaintings = shufflePaintings(paintings);
-    this.setState({ paintings: shuffledPaintings });
+    this.setState({ 
+      paintings: shuffledPaintings
+    });
   };
   handleIncrement = () => {
     const newScore = this.state.currentScore + 1;
@@ -37,7 +50,10 @@ class App extends Component {
       rightWrong: ""
     });
     if (newScore === 7) {
-      this.setState({ rightWrong: "You win!" });
+      this.setState({ 
+        rightWrong: "You win!",
+        ready: false
+      });
     }
     else if (newScore >= this.state.topScore) {
       this.setState({ topScore: newScore });
@@ -49,7 +65,8 @@ class App extends Component {
       currentScore: 0,
       topScore: this.state.topScore,
       rightWrong: "You lose",
-      clicked: []
+      clicked: [],
+      ready: false
     });
     this.handleShuffle();
   };
@@ -72,16 +89,19 @@ class App extends Component {
         />
         <Title>Try to click all of the Alphonse Mucha paintings once, but don't hit any duplictates - or it's game over!</Title>
         <Container>
+          <StartBtn onClick={this.startGame}>Start Game</StartBtn>
           <Row>
             {this.state.paintings.map(paintings => (
               <Column size="md-3">
-              <Images 
-                src={paintings.image}
-                id={paintings.id}
-                key={paintings.id}
-                handleClick={this.handleClick}
-                handleShuffle={this.handleShuffle}
-              />
+              <ReactPlaceholder delay={1000} showLoadingAnimation={true} type='rect' ready={this.state.ready} color='#E0E0E0' style={{ width: 200, height: 300, margin: 25 }}>
+                <Images 
+                  src={paintings.image}
+                  id={paintings.id}
+                  key={paintings.id}
+                  handleClick={this.handleClick}
+                  handleShuffle={this.handleShuffle}
+                />
+              </ReactPlaceholder>
               </Column>
             ))}
           </Row>
