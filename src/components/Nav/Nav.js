@@ -3,7 +3,7 @@ import "./Nav.css";
 
 const Nav = props => (
   <nav>
-    <ul>
+    <ul className="d-flex justify-content-between">
       <li className="brand">
         <a href="/">{props.title}</a>
       </li>
